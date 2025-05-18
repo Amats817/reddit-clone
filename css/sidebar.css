@@ -19,7 +19,6 @@
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
-    z-index: 10;
 }
 
 .sidebar > li {
@@ -137,42 +136,4 @@
 
 .favorite.active .filled {
   opacity: 1;
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    display: none;
-    position: fixed;
-    top: 57px;
-    left: 0;
-    width: 220px;
-    height: calc(100vh - 57px);
-    background-color: white;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    overflow-y: auto;
-    transition: transform 0.3s ease;
-    transform: translateX(-100%);
-  }
-
-  .sidebar.show {
-    display: block;
-    transform: translateX(0);
-  }
-}
-
-.sidebar-toggle-button {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: rgb(33, 39, 42);
-  margin-right: 12px;
-}
-
-@media (max-width: 768px) {
-  .sidebar-toggle-button {
-    display: inline-block;
-  }
 }
