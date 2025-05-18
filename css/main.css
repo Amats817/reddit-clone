@@ -4,6 +4,48 @@
     min-height: 100vh;
 }
 
+@media (max-width: 768px) {
+  .main {
+    padding-top:60px ;
+    padding-left: 8px;
+  }
+
+  body.sidebar-visible .main {
+    padding-left: 265px;
+  }
+
+  /* Hide main-sidebar by default on small screens */
+  .main-sidebar {
+    display: none;
+  }
+
+  /* Show main-sidebar when sidebar is visible */
+  body.sidebar-visible .main-sidebar {
+    display: block;
+  }
+
+  /* Remove main-head for smaller screens */
+  .main-head {
+    display: none;
+  }
+}
+
+  /* Hide main-sidebar by default on small screens */
+  .main-sidebar {
+    display: none;
+  }
+
+  /* Show main-sidebar when sidebar is visible */
+  body.sidebar-visible .main-sidebar {
+    display: block;
+  }
+
+  /* Adjust main-head for smaller screens */
+  .main-head {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
 .main-head-banner{
     width: 100%;
     border-radius: 6px;
