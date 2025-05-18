@@ -53,15 +53,4 @@ document.addEventListener('DOMContentLoaded', () => {
       scoreSpan.textContent = score;
     });
   });
-
-  // Sidebar toggle button functionality
-  const sidebarToggleButton = document.querySelector('.sidebar-toggle-button');
-  const sidebar = document.querySelector('.sidebar');
-
-  if (sidebarToggleButton && sidebar) {
-    sidebarToggleButton.addEventListener('click', () => {
-      sidebar.classList.toggle('show');
-      document.body.classList.toggle('sidebar-visible', sidebar.classList.contains('show'));
-    });
-  }
 });
