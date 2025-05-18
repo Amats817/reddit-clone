@@ -19,6 +19,7 @@
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
+    z-index: 10;
 }
 
 .sidebar > li {
