@@ -1,0 +1,54 @@
+.profile-menu{
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+}
+
+.profile-menu-content{
+    display: flex;
+    padding: 8px 16px;
+    margin: 0;
+    gap: 10px;
+    align-items: center;
+}
+
+.profile-menu-title{
+    color: rgb(33, 39, 42);
+    font-size: 14px;
+}
+
+.profile-menu-extra{
+    color: rgb(87, 111, 118);
+    font-size: 12px;
+}
+
+.profile-menu-content-avatar{
+    position: relative;
+}
+
+.profile-menu-status{
+    right: -1px;
+    bottom: -1px;
+}
+
+.profile-menu-content:hover{
+    background-color: rgb(219,228,233);
+    cursor: pointer;
+}
+
+.profile-menu-content:active{
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.profile-menu-item-right{
+    flex-grow: 1;
+}
+
+.profile-menu-item-left{
+    position: relative;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+}

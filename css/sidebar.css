@@ -1,0 +1,139 @@
+.sidebar, .sidebar-section{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 57px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    width: 220px;
+    padding: 4px 16px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    height: calc(100vh - 57px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.sidebar > li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+}
+
+.sidebar-link{
+    display: flex;
+    text-decoration: none;
+    color: rgb(33, 39, 42);
+    font-size: 14px;
+    padding: 4px 16px;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebar-link > img{
+    padding: 6px;
+}
+
+.sidebar-link:hover {
+    background-color: rgb(246, 248, 249);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar-link:active {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.sidebar-section-item-details{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-collapse-checkbox:checked ~ .sidebar-section{
+    display: none;
+}
+
+.sidebar-collapse-label > img{
+    transform: rotateZ(180deg);
+    transition: transform 0.2s ease;
+}
+
+.sidebar-collapse-checkbox:checked ~ .sidebar-collapse-label > img{
+    transform: rotateZ(0);
+}
+
+.sidebar-collapse-checkbox{
+    display: none;
+}
+
+.sidebar-collapse-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(87, 111, 118);
+}
+
+.sidebar-collapse-label:hover {
+    background-color: rgb(246, 248, 249);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar-collapse-label:active {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.sidebar-icon{
+    width: 32px;
+    border-radius: 50%;
+}
+
+.favorite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
+
+.favorite:hover{
+    cursor: pointer;
+    background-color: rgb(219, 228, 233);
+}
+
+.favorite:active{
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.favorite .star {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+
+.favorite .filled {
+  opacity: 0;
+}
+
+.favorite.active .outlined {
+  opacity: 0;
+}
+
+.favorite.active .filled {
+  opacity: 1;
+}

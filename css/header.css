@@ -1,0 +1,139 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    height: 56px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.reddit-logo{
+    width: 115px;
+}
+
+.header-actions{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-action > button {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.header-action > button:hover {
+    background-color: rgb(219,228,233);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header-action > button:active {
+    background-color: transparent;
+}
+
+.header-action-avatar{
+    width: 32px;
+    border-radius: 50%;
+}
+
+.header-action-avatar:hover{
+    cursor: pointer;
+}
+
+.notification-counter{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    top: 4px;
+    right: 0;
+}
+
+.inbox-button{
+    position: relative;
+}
+
+.avatar-button{
+    position: relative;
+}
+
+.status{
+    position: absolute;
+    background-color: rgb(1, 168, 22);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    bottom: 3px;
+    right: 3px;
+    border: 1px solid white;
+}
+
+.header-action-tooltip{
+    display: none;
+    position: absolute;
+    padding: 5px 15px;
+    background-color: #444;
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    white-space: nowrap;
+    top: 49px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-action > button:hover .header-action-tooltip{
+    display: block;
+}
+
+.avatar-button .header-action-tooltip{
+    right: 0;
+    left: auto;
+    transform: none;
+}
+
+.profile-menu{
+    display: none;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 8px 0, rgba(0, 0, 0, 0.25) 0 6px 12px 0;
+    border-radius: 10px;
+    background-color: white;
+    top: 50px;
+    right: 0;
+    width: 256px;
+}
+
+.profile-menu-visibility{
+    display: none;
+}
+
+.profile-menu-visibility:checked ~ .profile-menu{
+    display: block;
+}   
+
+.header-action{
+    position: relative;
+}   
+
+.profile-menu-visibility:checked ~ .avatar-button:hover .header-action-tooltip {
+    display: none;
+
+}
